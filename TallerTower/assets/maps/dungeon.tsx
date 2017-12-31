@@ -5,13 +5,23 @@
   <terrain name="Ice" tile="25"/>
   <terrain name="Tile" tile="62"/>
  </terraintypes>
- <tile id="0">
+ <tile id="0" type="Action">
+  <properties>
+   <property name="action" value="friction"/>
+   <property name="morph" type="int" value="16"/>
+  </properties>
   <image width="64" height="64" source="../tiles/amulet.png"/>
  </tile>
- <tile id="1">
+ <tile id="1" type="Action">
+  <properties>
+   <property name="action" value="armor"/>
+  </properties>
   <image width="64" height="64" source="../tiles/armor_shop.png"/>
  </tile>
- <tile id="2">
+ <tile id="2" type="Action">
+  <properties>
+   <property name="action" value="bank"/>
+  </properties>
   <image width="64" height="64" source="../tiles/bank.png"/>
  </tile>
  <tile id="3" type="Button">
@@ -27,16 +37,29 @@
  <tile id="5" type="Wall">
   <image width="64" height="64" source="../tiles/blue_wall.png"/>
  </tile>
- <tile id="6">
+ <tile id="6" type="Trap">
+  <properties>
+   <property name="rotate_ccw" type="bool" value="true"/>
+  </properties>
   <image width="64" height="64" source="../tiles/ccw_rotation_trap.png"/>
  </tile>
- <tile id="7">
+ <tile id="7" type="Action">
+  <properties>
+   <property name="action" value="morph"/>
+   <property name="morph" type="int" value="36"/>
+  </properties>
   <image width="64" height="64" source="../tiles/closed_door.png"/>
  </tile>
- <tile id="8">
+ <tile id="8" type="Trap">
+  <properties>
+   <property name="confuse" type="bool" value="true"/>
+  </properties>
   <image width="64" height="64" source="../tiles/confusion_trap.png"/>
  </tile>
- <tile id="9">
+ <tile id="9" type="Trap">
+  <properties>
+   <property name="rotate_cw" type="bool" value="true"/>
+  </properties>
   <image width="64" height="64" source="../tiles/cw_rotation_trap.png"/>
  </tile>
  <tile id="10" type="Button">
@@ -52,22 +75,34 @@
  <tile id="12" type="Wall">
   <image width="64" height="64" source="../tiles/cyan_wall.png"/>
  </tile>
- <tile id="13">
+ <tile id="13" type="Light">
   <image width="64" height="64" source="../tiles/dark_gem.png"/>
  </tile>
- <tile id="14">
+ <tile id="14" type="Trap">
+  <properties>
+   <property name="dizzy" type="bool" value="true"/>
+  </properties>
   <image width="64" height="64" source="../tiles/dizziness_trap.png"/>
  </tile>
- <tile id="15">
+ <tile id="15" type="Trap">
+  <properties>
+   <property name="drunk" type="bool" value="true"/>
+  </properties>
   <image width="64" height="64" source="../tiles/drunk_trap.png"/>
  </tile>
  <tile id="16" type="PassThrough">
   <image width="64" height="64" source="../tiles/empty.png"/>
  </tile>
- <tile id="17">
+ <tile id="17" type="Action">
+  <properties>
+   <property name="action" value="enhance"/>
+  </properties>
   <image width="64" height="64" source="../tiles/enhancement_shop.png"/>
  </tile>
- <tile id="18">
+ <tile id="18" type="Action">
+  <properties>
+   <property name="action" value="faith"/>
+  </properties>
   <image width="64" height="64" source="../tiles/faith_power_shop.png"/>
  </tile>
  <tile id="19" type="Button">
@@ -83,22 +118,37 @@
  <tile id="21" type="Wall">
   <image width="64" height="64" source="../tiles/green_wall.png"/>
  </tile>
- <tile id="22">
+ <tile id="22" type="Action">
+  <properties>
+   <property name="action" value="heal"/>
+  </properties>
   <image width="64" height="64" source="../tiles/heal_shop.png"/>
  </tile>
- <tile id="23">
+ <tile id="23" type="Trap">
+  <properties>
+   <property name="health" type="bool" value="true"/>
+  </properties>
   <image width="64" height="64" source="../tiles/heal_trap.png"/>
  </tile>
- <tile id="24">
+ <tile id="24" type="Trap">
+  <properties>
+   <property name="health" type="bool" value="true"/>
+  </properties>
   <image width="64" height="64" source="../tiles/hurt_trap.png"/>
  </tile>
  <tile id="25" type="SlideGround">
   <image width="64" height="64" source="../tiles/ice.png"/>
  </tile>
- <tile id="26">
+ <tile id="26" type="Action">
+  <properties>
+   <property name="action" value="items"/>
+  </properties>
   <image width="64" height="64" source="../tiles/item_shop.png"/>
  </tile>
- <tile id="27">
+ <tile id="27" type="Light">
+  <properties>
+   <property name="lit" type="bool" value="true"/>
+  </properties>
   <image width="64" height="64" source="../tiles/light_gem.png"/>
  </tile>
  <tile id="28" type="Button">
@@ -127,13 +177,21 @@
  <tile id="33" type="Wall">
   <image width="64" height="64" source="../tiles/metal_wall.png"/>
  </tile>
- <tile id="34">
+ <tile id="34" type="Action">
+  <properties>
+   <property name="action" value="battle"/>
+   <property name="moving" type="bool" value="true"/>
+  </properties>
   <image width="64" height="64" source="../tiles/monster.png"/>
  </tile>
  <tile id="35" type="Wall">
   <image width="64" height="64" source="../tiles/nothing.png"/>
  </tile>
- <tile id="36">
+ <tile id="36" type="Action">
+  <properties>
+   <property name="action" value="morph"/>
+   <property name="morph" type="int" value="7"/>
+  </properties>
   <image width="64" height="64" source="../tiles/open_door.png"/>
  </tile>
  <tile id="37" type="Button">
@@ -149,7 +207,7 @@
  <tile id="39" type="Wall">
   <image width="64" height="64" source="../tiles/orange_wall.png"/>
  </tile>
- <tile id="40">
+ <tile id="40" type="Player">
   <image width="64" height="64" source="../tiles/player.png"/>
  </tile>
  <tile id="41" type="Button">
@@ -178,7 +236,10 @@
  <tile id="46" type="Wall">
   <image width="64" height="64" source="../tiles/red_wall.png"/>
  </tile>
- <tile id="47">
+ <tile id="47" type="Action">
+  <properties>
+   <property name="action" value="regenerate"/>
+  </properties>
   <image width="64" height="64" source="../tiles/regenerator.png"/>
  </tile>
  <tile id="48" type="Button">
@@ -223,34 +284,65 @@
  <tile id="57" type="Wall">
   <image width="64" height="64" source="../tiles/sky_wall.png"/>
  </tile>
- <tile id="58">
+ <tile id="58" type="Action">
+  <properties>
+   <property name="action" value="socks"/>
+  </properties>
   <image width="64" height="64" source="../tiles/socks_shop.png"/>
  </tile>
- <tile id="59">
+ <tile id="59" type="Action">
+  <properties>
+   <property name="action" value="spells"/>
+  </properties>
   <image width="64" height="64" source="../tiles/spell_shop.png"/>
  </tile>
- <tile id="60">
+ <tile id="60" type="Action">
+  <properties>
+   <property name="action" value="direction"/>
+   <property name="direction" type="int" value="-1"/>
+  </properties>
   <image width="64" height="64" source="../tiles/stairs_down.png"/>
  </tile>
- <tile id="61">
+ <tile id="61" type="Action">
+  <properties>
+   <property name="action" value="direction"/>
+   <property name="direction" type="int" value="1"/>
+  </properties>
   <image width="64" height="64" source="../tiles/stairs_up.png"/>
  </tile>
  <tile id="62" type="Ground">
   <image width="64" height="64" source="../tiles/tile.png"/>
  </tile>
- <tile id="63">
+ <tile id="63" type="Trap">
+  <properties>
+   <property name="uturn" type="bool" value="true"/>
+  </properties>
   <image width="64" height="64" source="../tiles/u_turn_trap.png"/>
  </tile>
- <tile id="64">
+ <tile id="64" type="Trap">
+  <properties>
+   <property name="health" type="bool" value="true"/>
+   <property name="variable" type="bool" value="true"/>
+  </properties>
   <image width="64" height="64" source="../tiles/variable_heal_trap.png"/>
  </tile>
- <tile id="65">
+ <tile id="65" type="Trap">
+  <properties>
+   <property name="health" type="bool" value="true"/>
+   <property name="variable" type="bool" value="true"/>
+  </properties>
   <image width="64" height="64" source="../tiles/variable_hurt_trap.png"/>
  </tile>
- <tile id="66">
+ <tile id="66" type="Trap">
+  <properties>
+   <property name="warp" type="bool" value="true"/>
+  </properties>
   <image width="64" height="64" source="../tiles/warp_trap.png"/>
  </tile>
- <tile id="67">
+ <tile id="67" type="Action">
+  <properties>
+   <property name="action" value="weapons"/>
+  </properties>
   <image width="64" height="64" source="../tiles/weapons_shop.png"/>
  </tile>
  <tile id="68" type="Button">
