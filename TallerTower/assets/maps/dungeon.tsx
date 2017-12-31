@@ -14,19 +14,17 @@
  <tile id="2">
   <image width="64" height="64" source="../tiles/bank.png"/>
  </tile>
- <tile id="3">
+ <tile id="3" type="Button">
+  <properties>
+   <property name="trigger1" type="int" value="4"/>
+   <property name="trigger2" type="int" value="5"/>
+  </properties>
   <image width="64" height="64" source="../tiles/blue_button.png"/>
  </tile>
  <tile id="4" type="PassThrough">
-  <properties>
-   <property name="toggle" type="int" value="5"/>
-  </properties>
   <image width="64" height="64" source="../tiles/blue_off_wall.png"/>
  </tile>
  <tile id="5" type="Wall">
-  <properties>
-   <property name="toggle" type="int" value="4"/>
-  </properties>
   <image width="64" height="64" source="../tiles/blue_wall.png"/>
  </tile>
  <tile id="6">
@@ -41,19 +39,17 @@
  <tile id="9">
   <image width="64" height="64" source="../tiles/cw_rotation_trap.png"/>
  </tile>
- <tile id="10">
+ <tile id="10" type="Button">
+  <properties>
+   <property name="trigger1" type="int" value="11"/>
+   <property name="trigger2" type="int" value="12"/>
+  </properties>
   <image width="64" height="64" source="../tiles/cyan_button.png"/>
  </tile>
  <tile id="11" type="PassThrough">
-  <properties>
-   <property name="toggle" type="int" value="12"/>
-  </properties>
   <image width="64" height="64" source="../tiles/cyan_off_wall.png"/>
  </tile>
  <tile id="12" type="Wall">
-  <properties>
-   <property name="toggle" type="int" value="11"/>
-  </properties>
   <image width="64" height="64" source="../tiles/cyan_wall.png"/>
  </tile>
  <tile id="13">
@@ -74,7 +70,11 @@
  <tile id="18">
   <image width="64" height="64" source="../tiles/faith_power_shop.png"/>
  </tile>
- <tile id="19">
+ <tile id="19" type="Button">
+  <properties>
+   <property name="trigger1" type="int" value="20"/>
+   <property name="trigger2" type="int" value="21"/>
+  </properties>
   <image width="64" height="64" source="../tiles/green_button.png"/>
  </tile>
  <tile id="20" type="PassThrough">
@@ -101,7 +101,11 @@
  <tile id="27">
   <image width="64" height="64" source="../tiles/light_gem.png"/>
  </tile>
- <tile id="28">
+ <tile id="28" type="Button">
+  <properties>
+   <property name="trigger1" type="int" value="29"/>
+   <property name="trigger2" type="int" value="30"/>
+  </properties>
   <image width="64" height="64" source="../tiles/magenta_button.png"/>
  </tile>
  <tile id="29" type="PassThrough">
@@ -110,7 +114,11 @@
  <tile id="30" type="Wall">
   <image width="64" height="64" source="../tiles/magenta_wall.png"/>
  </tile>
- <tile id="31">
+ <tile id="31" type="Button">
+  <properties>
+   <property name="trigger1" type="int" value="32"/>
+   <property name="trigger2" type="int" value="33"/>
+  </properties>
   <image width="64" height="64" source="../tiles/metal_button.png"/>
  </tile>
  <tile id="32" type="PassThrough">
@@ -128,7 +136,11 @@
  <tile id="36">
   <image width="64" height="64" source="../tiles/open_door.png"/>
  </tile>
- <tile id="37">
+ <tile id="37" type="Button">
+  <properties>
+   <property name="trigger1" type="int" value="38"/>
+   <property name="trigger2" type="int" value="39"/>
+  </properties>
   <image width="64" height="64" source="../tiles/orange_button.png"/>
  </tile>
  <tile id="38" type="PassThrough">
@@ -140,7 +152,11 @@
  <tile id="40">
   <image width="64" height="64" source="../tiles/player.png"/>
  </tile>
- <tile id="41">
+ <tile id="41" type="Button">
+  <properties>
+   <property name="trigger1" type="int" value="42"/>
+   <property name="trigger2" type="int" value="43"/>
+  </properties>
   <image width="64" height="64" source="../tiles/purple_button.png"/>
  </tile>
  <tile id="42" type="PassThrough">
@@ -149,7 +165,11 @@
  <tile id="43" type="Wall">
   <image width="64" height="64" source="../tiles/purple_wall.png"/>
  </tile>
- <tile id="44">
+ <tile id="44" type="Button">
+  <properties>
+   <property name="trigger1" type="int" value="45"/>
+   <property name="trigger2" type="int" value="46"/>
+  </properties>
   <image width="64" height="64" source="../tiles/red_button.png"/>
  </tile>
  <tile id="45" type="PassThrough">
@@ -161,7 +181,11 @@
  <tile id="47">
   <image width="64" height="64" source="../tiles/regenerator.png"/>
  </tile>
- <tile id="48">
+ <tile id="48" type="Button">
+  <properties>
+   <property name="trigger1" type="int" value="49"/>
+   <property name="trigger2" type="int" value="50"/>
+  </properties>
   <image width="64" height="64" source="../tiles/rose_button.png"/>
  </tile>
  <tile id="49" type="PassThrough">
@@ -173,7 +197,11 @@
  <tile id="51" type="Wall">
   <image width="64" height="64" source="../tiles/sealing_wall.png"/>
  </tile>
- <tile id="52">
+ <tile id="52" type="Button">
+  <properties>
+   <property name="trigger1" type="int" value="53"/>
+   <property name="trigger2" type="int" value="54"/>
+  </properties>
   <image width="64" height="64" source="../tiles/seaweed_button.png"/>
  </tile>
  <tile id="53" type="PassThrough">
@@ -182,7 +210,11 @@
  <tile id="54" type="Wall">
   <image width="64" height="64" source="../tiles/seaweed_wall.png"/>
  </tile>
- <tile id="55">
+ <tile id="55" type="Button">
+  <properties>
+   <property name="trigger1" type="int" value="56"/>
+   <property name="trigger2" type="int" value="57"/>
+  </properties>
   <image width="64" height="64" source="../tiles/sky_button.png"/>
  </tile>
  <tile id="56" type="PassThrough">
@@ -221,7 +253,11 @@
  <tile id="67">
   <image width="64" height="64" source="../tiles/weapons_shop.png"/>
  </tile>
- <tile id="68">
+ <tile id="68" type="Button">
+  <properties>
+   <property name="trigger1" type="int" value="69"/>
+   <property name="trigger2" type="int" value="70"/>
+  </properties>
   <image width="64" height="64" source="../tiles/white_button.png"/>
  </tile>
  <tile id="69" type="PassThrough">
@@ -230,7 +266,11 @@
  <tile id="70" type="Wall">
   <image width="64" height="64" source="../tiles/white_wall.png"/>
  </tile>
- <tile id="71">
+ <tile id="71" type="Button">
+  <properties>
+   <property name="trigger1" type="int" value="72"/>
+   <property name="trigger2" type="int" value="73"/>
+  </properties>
   <image width="64" height="64" source="../tiles/yellow_button.png"/>
  </tile>
  <tile id="72" type="PassThrough">
