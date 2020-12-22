@@ -1,1 +1,3 @@
-# taller-tower
+# Taller Tower
+
+Tower-climbing RPG.
